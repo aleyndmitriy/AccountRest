@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yHQ-cY-gWH">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Accounts View Controller-->
+        <scene sceneID="NBL-7p-M5Y">
+            <objects>
+                <viewController id="yHQ-cY-gWH" customClass="AccountsViewController" customModule="AccountRest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3yY-c8-f9f">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oCh-4u-tjK">
+                                <rect key="frame" x="0.0" y="10" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Accounts" id="1L7-0H-RY2">
+                                        <barButtonItem key="leftBarButtonItem" id="pAB-yp-nw4">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="I7n-BR-hYz">
+                                                <rect key="frame" x="16" y="7" width="34" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Back"/>
+                                                <connections>
+                                                    <action selector="backToMainView:" destination="yHQ-cY-gWH" eventType="touchUpInside" id="UQH-m3-fH3"/>
+                                                </connections>
+                                            </button>
+                                        </barButtonItem>
+                                        <rightBarButtonItems>
+                                            <barButtonItem systemItem="trash" id="95h-3t-ZhU"/>
+                                            <barButtonItem systemItem="add" id="Nf1-rb-HAh"/>
+                                        </rightBarButtonItems>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="NEl-yv-gqC">
+                                <rect key="frame" x="0.0" y="54" width="375" height="613"/>
+                                <subviews>
+                                    <searchBar contentMode="redraw" placeholder="Search" showsSearchResultsButton="YES" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gpB-vW-dbF">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="dpK-1B-qPh"/>
+                                        </constraints>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <scopeButtonTitles>
+                                            <string>Title</string>
+                                            <string>Title</string>
+                                        </scopeButtonTitles>
+                                        <connections>
+                                            <outlet property="delegate" destination="yHQ-cY-gWH" id="YD8-jS-8ut"/>
+                                        </connections>
+                                    </searchBar>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Btb-Eo-htI">
+                                        <rect key="frame" x="0.0" y="44" width="375" height="569"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AccountCellID" rowHeight="77" id="eGS-ti-66m" customClass="SWAccountViewCell" customModule="AccountRest" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="28" width="375" height="77"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eGS-ti-66m" id="cSk-fS-YS8">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="77"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="bfl-7R-IFP">
+                                                            <rect key="frame" x="16" y="5" width="343" height="67"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fda-Cq-0Ls">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="129.5" height="67"/>
+                                                                    <attributedString key="attributedText">
+                                                                        <fragment content="Account Number">
+                                                                            <attributes>
+                                                                                <color key="NSColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                <font key="NSFont" size="17" name="ArialNarrow-Italic"/>
+                                                                                <font key="NSOriginalFont" size="17" name="ArialNarrow-Italic"/>
+                                                                            </attributes>
+                                                                        </fragment>
+                                                                    </attributedString>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oQr-Z9-xED">
+                                                                    <rect key="frame" x="141.5" y="0.0" width="40" height="67"/>
+                                                                    <attributedString key="attributedText">
+                                                                        <fragment content="Sum:">
+                                                                            <attributes>
+                                                                                <color key="NSColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                <font key="NSFont" size="17" name="ArialMT"/>
+                                                                                <font key="NSOriginalFont" size="17" name="ArialMT"/>
+                                                                            </attributes>
+                                                                        </fragment>
+                                                                    </attributedString>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k54-ul-YgB" customClass="UITextField">
+                                                                    <rect key="frame" x="193.5" y="0.0" width="149.5" height="67"/>
+                                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                </view>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="oQr-Z9-xED" firstAttribute="height" secondItem="Fda-Cq-0Ls" secondAttribute="height" id="GjE-Yg-V8A"/>
+                                                                <constraint firstItem="k54-ul-YgB" firstAttribute="height" secondItem="Fda-Cq-0Ls" secondAttribute="height" id="rqe-gg-N52"/>
+                                                            </constraints>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="bfl-7R-IFP" secondAttribute="trailing" constant="16" id="KKW-FK-STA"/>
+                                                        <constraint firstAttribute="bottom" secondItem="bfl-7R-IFP" secondAttribute="bottom" constant="5" id="a2a-jI-bOf"/>
+                                                        <constraint firstItem="bfl-7R-IFP" firstAttribute="top" secondItem="cSk-fS-YS8" secondAttribute="top" constant="5" id="apd-yX-u6w"/>
+                                                        <constraint firstItem="bfl-7R-IFP" firstAttribute="leading" secondItem="cSk-fS-YS8" secondAttribute="leading" constant="16" id="c3q-fs-mIS"/>
+                                                    </constraints>
+                                                </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="accountNumber" destination="Fda-Cq-0Ls" id="gh2-dG-8gB"/>
+                                                    <outlet property="sum" destination="k54-ul-YgB" id="qL3-3P-hmL"/>
+                                                </connections>
+                                            </tableViewCell>
+                                        </prototypes>
+                                        <connections>
+                                            <outlet property="dataSource" destination="yHQ-cY-gWH" id="BaF-Ry-rtj"/>
+                                            <outlet property="delegate" destination="yHQ-cY-gWH" id="AZQ-Zh-toM"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Btb-Eo-htI" secondAttribute="bottom" id="3df-hj-AMW"/>
+                                    <constraint firstAttribute="trailing" secondItem="Btb-Eo-htI" secondAttribute="trailing" id="9a9-7s-TiT"/>
+                                    <constraint firstItem="Btb-Eo-htI" firstAttribute="leading" secondItem="NEl-yv-gqC" secondAttribute="leading" id="Nl1-jQ-XKb"/>
+                                    <constraint firstItem="Btb-Eo-htI" firstAttribute="top" secondItem="gpB-vW-dbF" secondAttribute="bottom" id="w26-c2-6KM"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oCh-4u-tjK" firstAttribute="leading" secondItem="vGG-WZ-NBj" secondAttribute="leading" id="2Rw-3K-fqv"/>
+                            <constraint firstAttribute="bottom" secondItem="NEl-yv-gqC" secondAttribute="bottom" id="4k2-Uc-umd"/>
+                            <constraint firstItem="NEl-yv-gqC" firstAttribute="trailing" secondItem="vGG-WZ-NBj" secondAttribute="trailing" id="8NI-C0-bcY"/>
+                            <constraint firstItem="NEl-yv-gqC" firstAttribute="leading" secondItem="vGG-WZ-NBj" secondAttribute="leading" id="9bB-V8-UDE"/>
+                            <constraint firstItem="oCh-4u-tjK" firstAttribute="top" secondItem="3yY-c8-f9f" secondAttribute="top" constant="10" id="TgV-Qr-QJD"/>
+                            <constraint firstItem="NEl-yv-gqC" firstAttribute="top" secondItem="oCh-4u-tjK" secondAttribute="bottom" id="iW5-kN-fqi"/>
+                            <constraint firstItem="oCh-4u-tjK" firstAttribute="trailing" secondItem="vGG-WZ-NBj" secondAttribute="trailing" id="jBe-mu-maD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vGG-WZ-NBj"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="Btb-Eo-htI" id="qOl-Ed-jo1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q6g-nT-h6B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="97A-cV-60o" customClass="AccountsModuleInitializer" customModule="AccountRest" customModuleProvider="target">
+                    <connections>
+                        <outlet property="accountsViewController" destination="yHQ-cY-gWH" id="nVV-gl-yoG"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="88.799999999999997" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+</document>
