@@ -68,4 +68,7 @@ class AccountsPresenter: AccountsModuleInput, AccountsViewOutput, AccountsIntera
         }
     }
     
+    func didSumEdited(accountHash: Int, sum: String) {
+        
+    }
 }

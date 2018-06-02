@@ -68,10 +68,10 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="bfl-7R-IFP">
-                                                            <rect key="frame" x="16" y="5" width="343" height="67"/>
+                                                            <rect key="frame" x="16" y="10" width="343" height="57"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fda-Cq-0Ls">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="129.5" height="67"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="129.5" height="57"/>
                                                                     <attributedString key="attributedText">
                                                                         <fragment content="Account Number">
                                                                             <attributes>
@@ -84,7 +84,7 @@
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oQr-Z9-xED">
-                                                                    <rect key="frame" x="141.5" y="0.0" width="40" height="67"/>
+                                                                    <rect key="frame" x="141.5" y="0.0" width="40" height="57"/>
                                                                     <attributedString key="attributedText">
                                                                         <fragment content="Sum:">
                                                                             <attributes>
@@ -97,7 +97,7 @@
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k54-ul-YgB" customClass="UITextField">
-                                                                    <rect key="frame" x="193.5" y="0.0" width="149.5" height="67"/>
+                                                                    <rect key="frame" x="193.5" y="0.0" width="149.5" height="57"/>
                                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 </view>
                                                             </subviews>
@@ -109,8 +109,8 @@
                                                     </subviews>
                                                     <constraints>
                                                         <constraint firstAttribute="trailing" secondItem="bfl-7R-IFP" secondAttribute="trailing" constant="16" id="KKW-FK-STA"/>
-                                                        <constraint firstAttribute="bottom" secondItem="bfl-7R-IFP" secondAttribute="bottom" constant="5" id="a2a-jI-bOf"/>
-                                                        <constraint firstItem="bfl-7R-IFP" firstAttribute="top" secondItem="cSk-fS-YS8" secondAttribute="top" constant="5" id="apd-yX-u6w"/>
+                                                        <constraint firstAttribute="bottom" secondItem="bfl-7R-IFP" secondAttribute="bottom" constant="10" id="a2a-jI-bOf"/>
+                                                        <constraint firstItem="bfl-7R-IFP" firstAttribute="top" secondItem="cSk-fS-YS8" secondAttribute="top" constant="10" id="apd-yX-u6w"/>
                                                         <constraint firstItem="bfl-7R-IFP" firstAttribute="leading" secondItem="cSk-fS-YS8" secondAttribute="leading" constant="16" id="c3q-fs-mIS"/>
                                                     </constraints>
                                                 </tableViewCellContentView>

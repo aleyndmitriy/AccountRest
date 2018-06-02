@@ -54,7 +54,7 @@ class AccountsViewController: UIViewController, AccountsViewInput, UITableViewDe
             if output.section(key: key) != nil{
                 let account: SWAccount = output.section(key: key)![indexPath.row]
                 if let accountCell : SWAccountViewCell = cell as? SWAccountViewCell{
-                    accountCell.setAccountAttributes(account: account)
+                    accountCell.setAccountAttributes(account: account, delegate: self.output)
                     return accountCell
                 }
             }

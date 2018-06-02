@@ -22,7 +22,8 @@ class SWAccountViewCell: UITableViewCell, UITextFieldDelegate {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
+        self.addGestureRecognizer(gesture)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -31,19 +32,13 @@ class SWAccountViewCell: UITableViewCell, UITextFieldDelegate {
         // Configure the view for the selected state
     }
     
-    func setAccountAttributes(account: SWAccount)->Void{
+    func setAccountAttributes(account: SWAccount, delegate: SWAccountViewCellDelegate?)->Void{
         self.accountHash = account.hashValue
         self.accountNumber.text = account.number
         self.sum.delegate = self
         self.sum.keyboardType = .decimalPad
         self.sum.text = "\(account.sum)"
-    }
-    
-    //MDTextField delegate
-    
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        return true
+        self.delegate = delegate
     }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
@@ -52,5 +47,9 @@ class SWAccountViewCell: UITableViewCell, UITextFieldDelegate {
             self.delegate?.didSumEdited(accountHash: self.accountHash, sum: supposedText)
         }
         return true
+    }
+    
+    @IBAction func hideKeyboard(sender: AnyObject) {
+        self.sum.resignFirstResponder()
     }
 }

@@ -6,12 +6,8 @@
 //  Copyright © 2017 Home. All rights reserved.
 //
 
-protocol AccountsViewOutput {
+protocol AccountsViewOutput: SWAccountViewCellDelegate {
 
-    /**
-        @author ACR
-        Notify presenter that view is ready
-    */
 
     func viewIsReady()
     func backFromAccountsViewToMainView()->Void

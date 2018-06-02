@@ -19,16 +19,9 @@ class AccountsModuleInitializer: NSObject {
     }
     class func createModule()-> Void{
         let storyboard: UIStoryboard? = UIStoryboard(name: "AccountsBoard", bundle: nil)
-        if let viewController :AccountsViewController = storyboard?.instantiateInitialViewController() as? AccountsViewController{
-            let delegate:  AppDelegate? = UIApplication.shared.delegate as? AppDelegate
-            if let del = delegate{
-                let navController: UINavigationController? =  del.window?.rootViewController as? UINavigationController
-                if let nav : UINavigationController = navController{
-                    nav.pushViewController(viewController, animated: true)
-                }
-            }
+        if let viewController: AccountsViewController = storyboard?.instantiateInitialViewController() as? AccountsViewController, let delegate: AppDelegate = UIApplication.shared.delegate as? AppDelegate, let navController: UINavigationController =  delegate.window?.rootViewController as? UINavigationController {
+            navController.pushViewController(viewController, animated: true)
         }
-        
     }
     //MARK: Cheсk ARC
     override init() {
