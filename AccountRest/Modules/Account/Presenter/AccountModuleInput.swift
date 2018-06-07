@@ -7,5 +7,5 @@
 //
 
 protocol AccountModuleInput: class {
-
+    var account: SWAccount? { get set }
 }

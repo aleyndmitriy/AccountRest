@@ -15,4 +15,5 @@ protocol AccountsViewOutput: SWAccountViewCellDelegate {
     func key(index:Int)->String?
     func keys()->[String]?
     func section(key:String)->[SWAccount]?
+    func selected(key: Int, row: Int)
 }

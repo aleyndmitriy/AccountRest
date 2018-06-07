@@ -60,18 +60,18 @@
                                         <rect key="frame" x="0.0" y="44" width="375" height="559"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AccountCellID" rowHeight="77" id="eGS-ti-66m" customClass="SWAccountViewCell" customModule="AccountRest" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="28" width="375" height="77"/>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AccountCellID" rowHeight="121" id="eGS-ti-66m" customClass="SWAccountViewCell" customModule="AccountRest" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="28" width="375" height="121"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eGS-ti-66m" id="cSk-fS-YS8">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="77"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="121"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="bfl-7R-IFP">
-                                                            <rect key="frame" x="16" y="10" width="343" height="57"/>
+                                                            <rect key="frame" x="16" y="10" width="343" height="101"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fda-Cq-0Ls">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="129.5" height="57"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="129.5" height="101"/>
                                                                     <attributedString key="attributedText">
                                                                         <fragment content="Account Number">
                                                                             <attributes>
@@ -84,7 +84,7 @@
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oQr-Z9-xED">
-                                                                    <rect key="frame" x="141.5" y="0.0" width="40" height="57"/>
+                                                                    <rect key="frame" x="141.5" y="0.0" width="40" height="101"/>
                                                                     <attributedString key="attributedText">
                                                                         <fragment content="Sum:">
                                                                             <attributes>
@@ -97,7 +97,7 @@
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k54-ul-YgB" customClass="UITextField">
-                                                                    <rect key="frame" x="193.5" y="0.0" width="149.5" height="57"/>
+                                                                    <rect key="frame" x="193.5" y="0.0" width="149.5" height="101"/>
                                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 </view>
                                                             </subviews>
@@ -121,8 +121,8 @@
                                             </tableViewCell>
                                         </prototypes>
                                         <connections>
-                                            <outlet property="dataSource" destination="yHQ-cY-gWH" id="BaF-Ry-rtj"/>
-                                            <outlet property="delegate" destination="yHQ-cY-gWH" id="AZQ-Zh-toM"/>
+                                            <outlet property="dataSource" destination="yHQ-cY-gWH" id="RPu-yR-kxS"/>
+                                            <outlet property="delegate" destination="yHQ-cY-gWH" id="Kr9-zb-IWm"/>
                                         </connections>
                                     </tableView>
                                 </subviews>

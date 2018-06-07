@@ -93,7 +93,7 @@
                                     <constraint firstItem="UNk-tq-uud" firstAttribute="height" secondItem="6yy-ny-9N7" secondAttribute="height" id="nrD-uz-Ep4"/>
                                 </constraints>
                             </stackView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BCL-dq-giz">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BCL-dq-giz" customClass="MTKView">
                                 <rect key="frame" x="0.0" y="179" width="375" height="428"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
@@ -129,6 +129,7 @@
                     <connections>
                         <outlet property="lblNameOfBank" destination="KRL-SB-Iwj" id="LSw-1b-kft"/>
                         <outlet property="lblNumber" destination="F9P-BO-Y4C" id="M2l-oQ-xHY"/>
+                        <outlet property="renderView" destination="BCL-dq-giz" id="Otq-hG-pes"/>
                         <outlet property="txtSum" destination="UNk-tq-uud" id="oVT-Z8-7RC"/>
                     </connections>
                 </viewController>

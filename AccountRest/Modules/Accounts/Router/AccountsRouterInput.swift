@@ -10,5 +10,6 @@ import Foundation
 
 protocol AccountsRouterInput {
 
-    func backToMainView()->Void
+    func backToMainView()
+    func openDetailScreen(account: SWAccount)
 }

@@ -68,6 +68,13 @@ class AccountsPresenter: AccountsModuleInput, AccountsViewOutput, AccountsIntera
         }
     }
     
+    func selected(key: Int, row: Int) {
+        guard let key: String = self.key(index: key), let accounts: [SWAccount] = self.section(key: key) else {
+            return
+        }
+        self.router.openDetailScreen(account: accounts[row])
+    }
+    
     func didSumEdited(accountHash: Int, sum: String) {
         
     }

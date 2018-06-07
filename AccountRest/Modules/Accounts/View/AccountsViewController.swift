@@ -70,9 +70,6 @@ class AccountsViewController: UIViewController, AccountsViewInput, UITableViewDe
         return self.output.key(index: section)
     }
     
-    func sectionIndexTitles(for tableView: UITableView) -> [String]? {
-        return output.keys()
-    }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableViewAutomaticDimension
@@ -86,6 +83,12 @@ class AccountsViewController: UIViewController, AccountsViewInput, UITableViewDe
         self.tableView.reloadData()
     }
     
+
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        self.output.selected(key: indexPath.section, row: indexPath.row)
+    }
     //UISearchBarDelegate
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {

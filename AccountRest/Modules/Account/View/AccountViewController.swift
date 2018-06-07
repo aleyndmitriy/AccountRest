@@ -15,7 +15,8 @@ class AccountViewController: UIViewController, AccountViewInput {
     @IBOutlet weak var lblNameOfBank: UILabel!
     @IBOutlet weak var lblNumber: UILabel!
     @IBOutlet weak var txtSum: UITextField!
-    
+    @IBOutlet weak var renderView: MTKView!
+    var renderer: MainViewRenderer?
     
     @IBAction func btnBackTouched(_ sender: UIButton) {
         self.output.backFromAccountViewToAccountsView()
@@ -24,6 +25,19 @@ class AccountViewController: UIViewController, AccountViewInput {
     // MARK: Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        guard let mtkView: MTKView = self.view as? MTKView else {
+            return
+        }
+        self.renderView.device = MTLCreateSystemDefaultDevice()
+        if self.renderView.device == nil {
+            return
+        }
+        self.renderer = MainViewRenderer(view: self.renderView)
+        guard let rendererView = self.renderer else {
+            return
+        }
+        self.renderView.delegate = rendererView
+        self.renderView.preferredFramesPerSecond = 60
         output.viewIsReady()
     }
 

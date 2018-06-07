@@ -7,6 +7,8 @@
 //
 
 class AccountPresenter: AccountModuleInput, AccountViewOutput, AccountInteractorOutput {
+    var account: SWAccount?
+    
 
     weak var view: AccountViewInput!
     var interactor: AccountInteractorInput!
