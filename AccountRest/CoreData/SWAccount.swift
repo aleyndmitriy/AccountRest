@@ -27,8 +27,7 @@ class SWAccount: Hashable{
     }
     var hashValue: Int {
         let hash1: Int = number.hash
-        let hash2: Int = nameOfBank.hash
-        return hash1^hash2
+        return hash1
     }
     
     convenience init(number: String, nameOfBank: String){
@@ -37,6 +36,11 @@ class SWAccount: Hashable{
     
     convenience init(account:SWAccount){
         self.init(number: account.number, sum: account.sum, nameOfBank: account.nameOfBank)
+    }
+    
+    func describtion() -> String {
+        let desc: String = String("account: \(self.number) bank: \(self.nameOfBank) sum: \(self.sum)")
+        return desc
     }
     
     deinit {

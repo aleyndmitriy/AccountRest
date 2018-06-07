@@ -10,12 +10,8 @@ import UIKit
 class AccountsRouter: AccountsRouterInput {
     
     func backToMainView()->Void{
-        let delegate:  AppDelegate? = UIApplication.shared.delegate as? AppDelegate
-        if let del = delegate{
-            let navController: UINavigationController? =  del.window?.rootViewController as? UINavigationController
-            if let nav : UINavigationController = navController{
-                nav.popViewController(animated: true)
-            }
+        if let delegate:  AppDelegate = UIApplication.shared.delegate as? AppDelegate, let navController: UINavigationController =  del.window?.rootViewController as? UINavigationController {
+            navController.popViewController(animated: true)
         }
     }
     deinit {

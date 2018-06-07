@@ -12,25 +12,33 @@
 		06A2497D48B602C4BF1862C0 /* RestarauntsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D7D136CEBD033AB1554F12 /* RestarauntsViewController.swift */; };
 		06CC99D410CADE72AC9DB49A /* BanksInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CCBAABC4E2F82D2AAAE3E5 /* BanksInteractorOutput.swift */; };
 		0826FBD944D162DB2DD00F87 /* ProductsInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F012694CD983A77D8EB54C3 /* ProductsInteractorInput.swift */; };
+		0B3225E2FB57CEA99C038C34 /* AccountViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F999FB34E3F6A17D7247C03F /* AccountViewOutput.swift */; };
 		1844988464CBE171F6E2ECC0 /* AccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35073CFBB238F5311EF773A4 /* AccountsViewController.swift */; };
 		18F5EA43B17A41D64C4F00AE /* BanksInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C243417F92361E2910D2CC7 /* BanksInteractor.swift */; };
+		1D361ADCCF5CC8DC79AA5DB1 /* AccountViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB02FB77B5904EF271799313 /* AccountViewInput.swift */; };
 		1EE7B9E7954802AEF8F36AC6 /* BanksInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC6AA77A1279802B7404E2B /* BanksInteractorInput.swift */; };
+		1F27E8842A91EA2898C62581 /* AccountRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33701842D3F7EB9EFAB429D3 /* AccountRouterInput.swift */; };
 		20095B6BD202022F54343143 /* BanksRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC0F3F8C3B42BF4233EBCE5 /* BanksRouterInput.swift */; };
 		24E24B76BF520D793585CADD /* BanksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EF2EC43C8591DD8BA8198F /* BanksViewController.swift */; };
 		31BCAFDB2DD4E90E1A3BD700 /* RestarauntsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C7AAFF96E56D364FF81CF8 /* RestarauntsConfigurator.swift */; };
+		34532C478749B843928CA92C /* AccountRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33604122AC65D9F3C46977E /* AccountRouter.swift */; };
 		3A5678BE13F812A3BB1AC818 /* ProductsModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3784901BBCE2556B81A6F6DE /* ProductsModuleInput.swift */; };
 		4511D38BA985837096359FF2 /* ProductsRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD5C7D5C20F2A00A27CF488 /* ProductsRouterInput.swift */; };
 		4A015CA564F59450D106D2A9 /* AccountsInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CF99632B30B56C9F530EF6 /* AccountsInitializer.swift */; };
 		4DC98C29FADC4A682B6BB170 /* ProductsInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9BBD86974E992B6D95C156 /* ProductsInteractorOutput.swift */; };
+		4FFBB0C6AF97274C77492184 /* AccountInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB93D9D106B54C32894745E1 /* AccountInteractorOutput.swift */; };
 		57B2E4F16D076DC466682324 /* BanksRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43675A527B5B93517EC2E7B5 /* BanksRouter.swift */; };
 		588B006D1CF5D1E327FA20FA /* RestarauntsViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5B05FF5D88ABD2B14BA2D8 /* RestarauntsViewOutput.swift */; };
 		5DAE4AFFED37813F64CE1091 /* AccountsViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD32AC33693FFCB9855972C3 /* AccountsViewOutput.swift */; };
 		5DBBEFD1579080D238353B6C /* AccountsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302D97C04C55F530DEA5868B /* AccountsPresenter.swift */; };
 		61172F9FAB6A319FAB6AE079 /* BanksInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69BF03D9DA4092C6D7BE4DC /* BanksInitializer.swift */; };
+		6C206F88221DE883D53B49B6 /* AccountInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6EFB0640F7AAD954DB7E015 /* AccountInitializer.swift */; };
 		6E21676177632E2C03918AFD /* RestarauntsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526AE199CEC657279873C434 /* RestarauntsPresenter.swift */; };
+		70339AA714C4DB25E1FE9B7D /* AccountConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A523B6203CFB9D08B45EF58 /* AccountConfigurator.swift */; };
 		70FEDE9CA42F405A5636EDD9 /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F794F8989A4B7E22FBD6D55C /* ProductsViewController.swift */; };
 		71AC2E6F1DA7CBF3CD8C4153 /* AccountsRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B053332C294F8DC7EEF1335E /* AccountsRouterInput.swift */; };
 		72259E0570898C2A8CC95A58 /* BanksPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028B352EA9422886C173CF58 /* BanksPresenter.swift */; };
+		7A184BCBE49877BD2B5F9932 /* AccountInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B9CF39AB0FDBA432CDECB5 /* AccountInteractorInput.swift */; };
 		7AB5482475FB356D7F1CA97E /* AccountsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5472A6337DBD3A921BDEF56A /* AccountsInteractor.swift */; };
 		80A82D4ED996F97788BECEDE /* ProductsViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE417856F9C9593BC420DE41 /* ProductsViewInput.swift */; };
 		81DAB0CEE3DFC2F77E32D86E /* AccountsViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35065084B9366B16DFD2DE05 /* AccountsViewInput.swift */; };
@@ -40,6 +48,7 @@
 		978F77676FD143A4A0C4C136 /* BanksViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C586B0A8EE37DBAD8FB46A /* BanksViewInput.swift */; };
 		998C5505E0AF88D4696D7D00 /* BanksViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA16D79147715322DCBBC6F3 /* BanksViewOutput.swift */; };
 		9BDB5B3A7CD56FC2B9B03E92 /* RestarauntsInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E15054CDB72311DD48CC14 /* RestarauntsInitializer.swift */; };
+		9E0D410991EF0197FC579986 /* AccountModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A987437DE2F5F54B4D21BD14 /* AccountModuleInput.swift */; };
 		A0F9378AE55E7FB0C89DA23E /* RestarauntsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C8C69F2808B1567C177C7B /* RestarauntsRouter.swift */; };
 		A3A5202A71EDA4E72C776108 /* RestarauntsInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A95C29D5B569508FCC5E02 /* RestarauntsInteractorOutput.swift */; };
 		A601463B25A52CB724A239E6 /* ProductsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BF3C27818570CCD4998844 /* ProductsPresenter.swift */; };
@@ -55,10 +64,13 @@
 		C24B28041F7A3C2200E1685D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C24B28031F7A3C2100E1685D /* Assets.xcassets */; };
 		C24B28071F7A3C2200E1685D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C24B28051F7A3C2200E1685D /* LaunchScreen.storyboard */; };
 		C26A503C1F8E1BCB003CDA79 /* SWAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26A503B1F8E1BCB003CDA79 /* SWAccount.swift */; };
+		C7E9B733F168363E79AB93DF /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1887CB1B101FCB87BE65E55B /* AccountViewController.swift */; };
 		CB8C00B80DB9AF4F8D0CF58E /* AccountsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7723743A7A486488F624F2AE /* AccountsRouter.swift */; };
 		CE405B8AB052DE9FAE6FF863 /* AccountsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B757A43427F1988D931B085A /* AccountsConfigurator.swift */; };
 		DAED37F385801C5F32B4BDA5 /* RestarauntsModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362A8C0F5CDBBF355A26D01C /* RestarauntsModuleInput.swift */; };
+		DB4DFA8C5078260E7C91AFA1 /* AccountInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB869550E5EADB66F2EEA1CE /* AccountInteractor.swift */; };
 		DD5C16410C6E718D87274444 /* AccountsModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A0649F19BC21757C95625C /* AccountsModuleInput.swift */; };
+		E268B8CB34EDC62F03DF5D80 /* AccountPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF929A5A1050F4D18733BAA5 /* AccountPresenter.swift */; };
 		E91C11418A573C5AB8681FCC /* Pods_AccountRest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1D8007F46FE0A9E28071C22 /* Pods_AccountRest.framework */; };
 		EEB2892FC2AD06861FFD11D0 /* ProductsViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891DFEF8A2F53D9612C4D290 /* ProductsViewOutput.swift */; };
 		F3B989C5407E84028B93C362 /* ProductsInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468899DB041EEDD98A8BD8E1 /* ProductsInitializer.swift */; };
@@ -66,6 +78,9 @@
 		FE231D421FA64C1200EFB354 /* SWAccountViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE231D411FA64C1200EFB354 /* SWAccountViewCell.swift */; };
 		FE7E0FB520BC860D00F912E3 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE7E0FB420BC860D00F912E3 /* MetalKit.framework */; };
 		FE7E0FB720BC897B00F912E3 /* MainViewRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7E0FB620BC897B00F912E3 /* MainViewRenderer.swift */; };
+		FE80AC4A20C47AAE00CEA5F4 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FE80AC4920C47AAE00CEA5F4 /* libsqlite3.tbd */; };
+		FE80AC4F20C4838600CEA5F4 /* DatabaseCloser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE80AC4D20C4838600CEA5F4 /* DatabaseCloser.cpp */; };
+		FEDD444920C293AF00834600 /* AccountBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEDD444820C293AF00834600 /* AccountBoard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,9 +91,11 @@
 		06C8C69F2808B1567C177C7B /* RestarauntsRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RestarauntsRouter.swift; sourceTree = "<group>"; };
 		14010E7F21072594ED047373 /* ProductsConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProductsConfigurator.swift; sourceTree = "<group>"; };
 		15D7D136CEBD033AB1554F12 /* RestarauntsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RestarauntsViewController.swift; sourceTree = "<group>"; };
+		1887CB1B101FCB87BE65E55B /* AccountViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		1CC52341BF704A787BAC9868 /* ProductsRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProductsRouter.swift; sourceTree = "<group>"; };
 		2C243417F92361E2910D2CC7 /* BanksInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BanksInteractor.swift; sourceTree = "<group>"; };
 		302D97C04C55F530DEA5868B /* AccountsPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AccountsPresenter.swift; sourceTree = "<group>"; };
+		33701842D3F7EB9EFAB429D3 /* AccountRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AccountRouterInput.swift; sourceTree = "<group>"; };
 		339B2D787F0AB3EF62C4201D /* RestarauntsRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RestarauntsRouterInput.swift; sourceTree = "<group>"; };
 		33CCBAABC4E2F82D2AAAE3E5 /* BanksInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BanksInteractorOutput.swift; sourceTree = "<group>"; };
 		35039A26DCF34CE5863C6610 /* Pods-AccountRest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AccountRest.release.xcconfig"; path = "Pods/Target Support Files/Pods-AccountRest/Pods-AccountRest.release.xcconfig"; sourceTree = "<group>"; };
@@ -94,6 +111,7 @@
 		5472A6337DBD3A921BDEF56A /* AccountsInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AccountsInteractor.swift; sourceTree = "<group>"; };
 		55BF3C27818570CCD4998844 /* ProductsPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProductsPresenter.swift; sourceTree = "<group>"; };
 		74E15054CDB72311DD48CC14 /* RestarauntsInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RestarauntsInitializer.swift; sourceTree = "<group>"; };
+		75B9CF39AB0FDBA432CDECB5 /* AccountInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AccountInteractorInput.swift; sourceTree = "<group>"; };
 		7723743A7A486488F624F2AE /* AccountsRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AccountsRouter.swift; sourceTree = "<group>"; };
 		7DC6AA77A1279802B7404E2B /* BanksInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BanksInteractorInput.swift; sourceTree = "<group>"; };
 		7E5B05FF5D88ABD2B14BA2D8 /* RestarauntsViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RestarauntsViewOutput.swift; sourceTree = "<group>"; };
@@ -101,11 +119,15 @@
 		891DFEF8A2F53D9612C4D290 /* ProductsViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProductsViewOutput.swift; sourceTree = "<group>"; };
 		8AD5C7D5C20F2A00A27CF488 /* ProductsRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProductsRouterInput.swift; sourceTree = "<group>"; };
 		91CF99632B30B56C9F530EF6 /* AccountsInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AccountsInitializer.swift; sourceTree = "<group>"; };
+		9A523B6203CFB9D08B45EF58 /* AccountConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AccountConfigurator.swift; sourceTree = "<group>"; };
 		A18CC3F34386473870EC6727 /* BanksConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BanksConfigurator.swift; sourceTree = "<group>"; };
 		A8C586B0A8EE37DBAD8FB46A /* BanksViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BanksViewInput.swift; sourceTree = "<group>"; };
+		A987437DE2F5F54B4D21BD14 /* AccountModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AccountModuleInput.swift; sourceTree = "<group>"; };
+		AB02FB77B5904EF271799313 /* AccountViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AccountViewInput.swift; sourceTree = "<group>"; };
 		AF9A0CC3726165833A369398 /* Pods-AccountRest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AccountRest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AccountRest/Pods-AccountRest.debug.xcconfig"; sourceTree = "<group>"; };
 		B04A6A61E2352F882A364CFA /* AccountsInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AccountsInteractorOutput.swift; sourceTree = "<group>"; };
 		B053332C294F8DC7EEF1335E /* AccountsRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AccountsRouterInput.swift; sourceTree = "<group>"; };
+		B6EFB0640F7AAD954DB7E015 /* AccountInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AccountInitializer.swift; sourceTree = "<group>"; };
 		B757A43427F1988D931B085A /* AccountsConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AccountsConfigurator.swift; sourceTree = "<group>"; };
 		B9A0649F19BC21757C95625C /* AccountsModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AccountsModuleInput.swift; sourceTree = "<group>"; };
 		BEFD10B33F0A57118E016C98 /* BanksModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BanksModuleInput.swift; sourceTree = "<group>"; };
@@ -120,18 +142,28 @@
 		C24B28061F7A3C2200E1685D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C24B28081F7A3C2200E1685D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C26A503B1F8E1BCB003CDA79 /* SWAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWAccount.swift; sourceTree = "<group>"; };
+		C33604122AC65D9F3C46977E /* AccountRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AccountRouter.swift; sourceTree = "<group>"; };
 		C6C7AAFF96E56D364FF81CF8 /* RestarauntsConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RestarauntsConfigurator.swift; sourceTree = "<group>"; };
 		CD9BBD86974E992B6D95C156 /* ProductsInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProductsInteractorOutput.swift; sourceTree = "<group>"; };
 		D69BF03D9DA4092C6D7BE4DC /* BanksInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BanksInitializer.swift; sourceTree = "<group>"; };
+		DB869550E5EADB66F2EEA1CE /* AccountInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AccountInteractor.swift; sourceTree = "<group>"; };
 		DD32AC33693FFCB9855972C3 /* AccountsViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AccountsViewOutput.swift; sourceTree = "<group>"; };
 		DF2B4CE23857F8EC82BDDC00 /* RestarauntsInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RestarauntsInteractor.swift; sourceTree = "<group>"; };
+		DF929A5A1050F4D18733BAA5 /* AccountPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AccountPresenter.swift; sourceTree = "<group>"; };
+		EB93D9D106B54C32894745E1 /* AccountInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AccountInteractorOutput.swift; sourceTree = "<group>"; };
 		F794F8989A4B7E22FBD6D55C /* ProductsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
+		F999FB34E3F6A17D7247C03F /* AccountViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AccountViewOutput.swift; sourceTree = "<group>"; };
 		FA16D79147715322DCBBC6F3 /* BanksViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BanksViewOutput.swift; sourceTree = "<group>"; };
 		FBA253A708B3B3BF9B3B5891 /* AccountsInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AccountsInteractorInput.swift; sourceTree = "<group>"; };
 		FE231D411FA64C1200EFB354 /* SWAccountViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWAccountViewCell.swift; sourceTree = "<group>"; };
 		FE417856F9C9593BC420DE41 /* ProductsViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProductsViewInput.swift; sourceTree = "<group>"; };
 		FE7E0FB420BC860D00F912E3 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
 		FE7E0FB620BC897B00F912E3 /* MainViewRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewRenderer.swift; sourceTree = "<group>"; };
+		FE80AC4920C47AAE00CEA5F4 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		FE80AC4C20C4838600CEA5F4 /* AccountRest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AccountRest-Bridging-Header.h"; sourceTree = "<group>"; };
+		FE80AC4D20C4838600CEA5F4 /* DatabaseCloser.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DatabaseCloser.cpp; sourceTree = "<group>"; };
+		FE80AC4E20C4838600CEA5F4 /* DatabaseCloser.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DatabaseCloser.hpp; sourceTree = "<group>"; };
+		FEDD444820C293AF00834600 /* AccountBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AccountBoard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +171,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE80AC4A20C47AAE00CEA5F4 /* libsqlite3.tbd in Frameworks */,
 				FE7E0FB520BC860D00F912E3 /* MetalKit.framework in Frameworks */,
 				E91C11418A573C5AB8681FCC /* Pods_AccountRest.framework in Frameworks */,
 			);
@@ -196,6 +229,17 @@
 			path = Restaraunts;
 			sourceTree = "<group>";
 		};
+		302CC329CB20CC038182CA80 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AB02FB77B5904EF271799313 /* AccountViewInput.swift */,
+				F999FB34E3F6A17D7247C03F /* AccountViewOutput.swift */,
+				1887CB1B101FCB87BE65E55B /* AccountViewController.swift */,
+				FEDD444820C293AF00834600 /* AccountBoard.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		39D12DA9D7E319F29809BA6B /* Banks */ = {
 			isa = PBXGroup;
 			children = (
@@ -215,6 +259,7 @@
 				F1A5CCDC4B693A5B0FF78EBA /* Accounts */,
 				2F43844ADC376826093CAB77 /* Restaraunts */,
 				BB1746A23EFE9E45DE286039 /* Products */,
+				9AF4A73B9A4067F4BDAC58E6 /* Account */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -256,6 +301,24 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		62FE3934A4C3497B5A78860E /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A987437DE2F5F54B4D21BD14 /* AccountModuleInput.swift */,
+				DF929A5A1050F4D18733BAA5 /* AccountPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		692ACCA9286620E61056B48F /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				9A523B6203CFB9D08B45EF58 /* AccountConfigurator.swift */,
+				B6EFB0640F7AAD954DB7E015 /* AccountInitializer.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
 		788DC07EA1700EC4148C8D37 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -269,6 +332,7 @@
 		79DCFB47F7B21C2E46682FF9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FE80AC4920C47AAE00CEA5F4 /* libsqlite3.tbd */,
 				FE7E0FB420BC860D00F912E3 /* MetalKit.framework */,
 				C1D8007F46FE0A9E28071C22 /* Pods_AccountRest.framework */,
 			);
@@ -333,6 +397,18 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		9AF4A73B9A4067F4BDAC58E6 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				302CC329CB20CC038182CA80 /* View */,
+				62FE3934A4C3497B5A78860E /* Presenter */,
+				E09329732496EB14961F469C /* Interactor */,
+				FDFA3A3C6BE2F1553B42EA61 /* Router */,
+				692ACCA9286620E61056B48F /* Configurator */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
 		A53C1200A3F7FD739C5F5867 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
@@ -392,6 +468,8 @@
 		C24B27FB1F7A3C2100E1685D /* AccountRest */ = {
 			isa = PBXGroup;
 			children = (
+				FE80AC4C20C4838600CEA5F4 /* AccountRest-Bridging-Header.h */,
+				FE80AC4B20C4803A00CEA5F4 /* DataAccess */,
 				C24094C01F8CC40F009E19DA /* CoreData */,
 				C24B27FC1F7A3C2100E1685D /* AppDelegate.swift */,
 				C24B27FE1F7A3C2100E1685D /* MainViewController.swift */,
@@ -425,6 +503,16 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		E09329732496EB14961F469C /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				75B9CF39AB0FDBA432CDECB5 /* AccountInteractorInput.swift */,
+				EB93D9D106B54C32894745E1 /* AccountInteractorOutput.swift */,
+				DB869550E5EADB66F2EEA1CE /* AccountInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
 		E43D4638FAC33103C8F91F76 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -454,6 +542,24 @@
 				198A4CA7B19CDF0FDCFC5F7F /* Configurator */,
 			);
 			path = Accounts;
+			sourceTree = "<group>";
+		};
+		FDFA3A3C6BE2F1553B42EA61 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				33701842D3F7EB9EFAB429D3 /* AccountRouterInput.swift */,
+				C33604122AC65D9F3C46977E /* AccountRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		FE80AC4B20C4803A00CEA5F4 /* DataAccess */ = {
+			isa = PBXGroup;
+			children = (
+				FE80AC4D20C4838600CEA5F4 /* DatabaseCloser.cpp */,
+				FE80AC4E20C4838600CEA5F4 /* DatabaseCloser.hpp */,
+			);
+			path = DataAccess;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -491,6 +597,7 @@
 				TargetAttributes = {
 					C24B27F81F7A3C2100E1685D = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0940;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -522,6 +629,7 @@
 				C24B28041F7A3C2200E1685D /* Assets.xcassets in Resources */,
 				C24B28021F7A3C2100E1685D /* Main.storyboard in Resources */,
 				C241B67F1F7A90EC00650FFA /* AccountsBoard.storyboard in Resources */,
+				FEDD444920C293AF00834600 /* AccountBoard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -590,6 +698,7 @@
 			files = (
 				C24B27FF1F7A3C2100E1685D /* MainViewController.swift in Sources */,
 				C24B27FD1F7A3C2100E1685D /* AppDelegate.swift in Sources */,
+				FE80AC4F20C4838600CEA5F4 /* DatabaseCloser.cpp in Sources */,
 				978F77676FD143A4A0C4C136 /* BanksViewInput.swift in Sources */,
 				998C5505E0AF88D4696D7D00 /* BanksViewOutput.swift in Sources */,
 				24E24B76BF520D793585CADD /* BanksViewController.swift in Sources */,
@@ -641,6 +750,18 @@
 				BD145B03844BD928E38B158D /* ProductsRouter.swift in Sources */,
 				BC5FFC7AD8598CAEDFFA0CB5 /* ProductsConfigurator.swift in Sources */,
 				F3B989C5407E84028B93C362 /* ProductsInitializer.swift in Sources */,
+				1D361ADCCF5CC8DC79AA5DB1 /* AccountViewInput.swift in Sources */,
+				0B3225E2FB57CEA99C038C34 /* AccountViewOutput.swift in Sources */,
+				C7E9B733F168363E79AB93DF /* AccountViewController.swift in Sources */,
+				9E0D410991EF0197FC579986 /* AccountModuleInput.swift in Sources */,
+				E268B8CB34EDC62F03DF5D80 /* AccountPresenter.swift in Sources */,
+				7A184BCBE49877BD2B5F9932 /* AccountInteractorInput.swift in Sources */,
+				4FFBB0C6AF97274C77492184 /* AccountInteractorOutput.swift in Sources */,
+				DB4DFA8C5078260E7C91AFA1 /* AccountInteractor.swift in Sources */,
+				1F27E8842A91EA2898C62581 /* AccountRouterInput.swift in Sources */,
+				34532C478749B843928CA92C /* AccountRouter.swift in Sources */,
+				70339AA714C4DB25E1FE9B7D /* AccountConfigurator.swift in Sources */,
+				6C206F88221DE883D53B49B6 /* AccountInitializer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -783,6 +904,7 @@
 			baseConfigurationReference = AF9A0CC3726165833A369398 /* Pods-AccountRest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 79E756PTBV;
@@ -791,6 +913,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Home.AccountRest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "AccountRest/DataAccess/AccountRest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -801,6 +925,7 @@
 			baseConfigurationReference = 35039A26DCF34CE5863C6610 /* Pods-AccountRest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 79E756PTBV;
@@ -809,6 +934,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Home.AccountRest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "AccountRest/DataAccess/AccountRest-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
