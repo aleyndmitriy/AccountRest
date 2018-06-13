@@ -74,8 +74,4 @@ class AccountsPresenter: AccountsModuleInput, AccountsViewOutput, AccountsIntera
         }
         self.router.openDetailScreen(account: accounts[row])
     }
-    
-    func didSumEdited(accountHash: Int, sum: String) {
-        
-    }
 }

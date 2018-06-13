@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AccountsViewController: UIViewController, AccountsViewInput, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
+class AccountsViewController: UIViewController, AccountsViewInput, UISearchBarDelegate {
     var output: AccountsViewOutput!
 
     @IBOutlet weak var tableView: UITableView!
@@ -23,7 +23,9 @@ class AccountsViewController: UIViewController, AccountsViewInput, UITableViewDe
         output.viewIsReady()
     }
 
-
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
     // MARK: AccountsViewInput
     func setupInitialState() {
     }
@@ -32,7 +34,24 @@ class AccountsViewController: UIViewController, AccountsViewInput, UITableViewDe
         
     }
     
+   
     
+    func reloadViewSection(index: Int) {
+        self.tableView.reloadSections(IndexSet(integer: index), with: UITableViewRowAnimation.fade)
+    }
+    
+    func reloadViewTable() {
+        self.tableView.reloadData()
+    }
+    
+    //UISearchBarDelegate
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
+    }
+}
+
+extension AccountsViewController: UITableViewDelegate, UITableViewDataSource {
     // UITableViewdataSource methods
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if let nameOfSection : String = output.key(index: section){
@@ -54,7 +73,7 @@ class AccountsViewController: UIViewController, AccountsViewInput, UITableViewDe
             if output.section(key: key) != nil{
                 let account: SWAccount = output.section(key: key)![indexPath.row]
                 if let accountCell : SWAccountViewCell = cell as? SWAccountViewCell{
-                    accountCell.setAccountAttributes(account: account, delegate: self.output)
+                    accountCell.setAccountAttributes(account: account)
                     return accountCell
                 }
             }
@@ -70,28 +89,12 @@ class AccountsViewController: UIViewController, AccountsViewInput, UITableViewDe
         return self.output.key(index: section)
     }
     
-    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableViewAutomaticDimension
     }
     
-    func reloadViewSection(index: Int) {
-        self.tableView.reloadSections(IndexSet(integer: index), with: UITableViewRowAnimation.fade)
-    }
-    
-    func reloadViewTable() {
-        self.tableView.reloadData()
-    }
-    
-
-    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         self.output.selected(key: indexPath.section, row: indexPath.row)
-    }
-    //UISearchBarDelegate
-    
-    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        searchBar.resignFirstResponder()
     }
 }

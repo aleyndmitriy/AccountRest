@@ -9,5 +9,5 @@
 protocol AccountViewOutput {
 
     func viewIsReady()
-    func backFromAccountViewToAccountsView()->Void
+    func backFromAccountViewToAccountsView()
 }

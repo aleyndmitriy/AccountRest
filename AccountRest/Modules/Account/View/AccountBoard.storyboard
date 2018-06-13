@@ -94,7 +94,7 @@
                                 </constraints>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BCL-dq-giz" customClass="MTKView">
-                                <rect key="frame" x="0.0" y="179" width="375" height="428"/>
+                                <rect key="frame" x="0.0" y="184" width="375" height="423"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cD8-7h-Vze">
@@ -113,7 +113,7 @@
                             <constraint firstItem="cD8-7h-Vze" firstAttribute="leading" secondItem="2uI-y8-Qlm" secondAttribute="leading" id="Szo-6n-r0o"/>
                             <constraint firstItem="32i-f9-2bq" firstAttribute="trailing" secondItem="2uI-y8-Qlm" secondAttribute="trailing" constant="-16" id="UPZ-MD-5Pq"/>
                             <constraint firstItem="jhr-a1-Zg6" firstAttribute="top" secondItem="2uI-y8-Qlm" secondAttribute="top" id="ZFe-zk-1LG"/>
-                            <constraint firstItem="BCL-dq-giz" firstAttribute="top" secondItem="32i-f9-2bq" secondAttribute="bottom" id="bsC-Ps-3kl"/>
+                            <constraint firstItem="BCL-dq-giz" firstAttribute="top" secondItem="32i-f9-2bq" secondAttribute="bottom" constant="5" id="bsC-Ps-3kl"/>
                             <constraint firstItem="cD8-7h-Vze" firstAttribute="trailing" secondItem="2uI-y8-Qlm" secondAttribute="trailing" id="d8x-4I-aRo"/>
                             <constraint firstItem="2uI-y8-Qlm" firstAttribute="trailing" secondItem="KRL-SB-Iwj" secondAttribute="trailing" id="euZ-7J-GKU"/>
                             <constraint firstItem="KRL-SB-Iwj" firstAttribute="leading" secondItem="2uI-y8-Qlm" secondAttribute="leading" id="fVM-kr-Auj"/>

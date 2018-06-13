@@ -25,9 +25,6 @@ class AccountViewController: UIViewController, AccountViewInput {
     // MARK: Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        guard let mtkView: MTKView = self.view as? MTKView else {
-            return
-        }
         self.renderView.device = MTLCreateSystemDefaultDevice()
         if self.renderView.device == nil {
             return
@@ -45,4 +42,26 @@ class AccountViewController: UIViewController, AccountViewInput {
     // MARK: AccountViewInput
     func setupInitialState() {
     }
+    
+    func setAccountView(account: SWAccount) {
+        self.lblNameOfBank.text = account.nameOfBank
+        self.lblNumber.text = account.number
+        self.txtSum.text = account.sum.description
+    }
+}
+
+extension AccountViewController: UITextFieldDelegate {
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+     if let text = textField.text, let range = Range(range, in: text) {
+     let supposedText = text.replacingCharacters(in: range, with: string)
+     //self.delegate?.didSumEdited(accountHash: self.accountHash, sum: supposedText)
+     }
+     return true
+     }
+     
+     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+     self.txtSum.resignFirstResponder()
+     return true
+     }
 }

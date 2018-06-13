@@ -7,6 +7,7 @@
 //
 
 class AccountPresenter: AccountModuleInput, AccountViewOutput, AccountInteractorOutput {
+    
     var account: SWAccount?
     
 
@@ -15,7 +16,9 @@ class AccountPresenter: AccountModuleInput, AccountViewOutput, AccountInteractor
     var router: AccountRouterInput!
 
     func viewIsReady() {
-
+        if let account: SWAccount = self.account {
+            view.setAccountView(account: account)
+        }
     }
     
     func backFromAccountViewToAccountsView() {

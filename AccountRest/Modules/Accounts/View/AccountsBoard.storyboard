@@ -56,22 +56,25 @@
                                             <outlet property="delegate" destination="yHQ-cY-gWH" id="YD8-jS-8ut"/>
                                         </connections>
                                     </searchBar>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Btb-Eo-htI">
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="Btb-Eo-htI">
                                         <rect key="frame" x="0.0" y="44" width="375" height="559"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AccountCellID" rowHeight="121" id="eGS-ti-66m" customClass="SWAccountViewCell" customModule="AccountRest" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="28" width="375" height="121"/>
+                                                <rect key="frame" x="0.0" y="55.5" width="375" height="121"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eGS-ti-66m" id="cSk-fS-YS8">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="121"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="bfl-7R-IFP">
-                                                            <rect key="frame" x="16" y="10" width="343" height="101"/>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NgD-XC-6ru">
+                                                            <rect key="frame" x="16" y="0.0" width="343" height="20.5"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fda-Cq-0Ls">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="129.5" height="101"/>
+                                                                    <rect key="frame" x="0.0" y="0.5" width="129.5" height="20.5"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="30" id="Mqw-wT-S2Y"/>
+                                                                    </constraints>
                                                                     <attributedString key="attributedText">
                                                                         <fragment content="Account Number">
                                                                             <attributes>
@@ -84,7 +87,7 @@
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oQr-Z9-xED">
-                                                                    <rect key="frame" x="141.5" y="0.0" width="40" height="101"/>
+                                                                    <rect key="frame" x="256" y="0.5" width="40" height="20.5"/>
                                                                     <attributedString key="attributedText">
                                                                         <fragment content="Sum:">
                                                                             <attributes>
@@ -96,27 +99,37 @@
                                                                     </attributedString>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k54-ul-YgB" customClass="UITextField">
-                                                                    <rect key="frame" x="193.5" y="0.0" width="149.5" height="101"/>
-                                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                                </view>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BjN-Ug-d41">
+                                                                    <rect key="frame" x="301" y="0.5" width="42" height="20.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
                                                             </subviews>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <constraints>
-                                                                <constraint firstItem="oQr-Z9-xED" firstAttribute="height" secondItem="Fda-Cq-0Ls" secondAttribute="height" id="GjE-Yg-V8A"/>
-                                                                <constraint firstItem="k54-ul-YgB" firstAttribute="height" secondItem="Fda-Cq-0Ls" secondAttribute="height" id="rqe-gg-N52"/>
+                                                                <constraint firstItem="Fda-Cq-0Ls" firstAttribute="leading" secondItem="NgD-XC-6ru" secondAttribute="leading" id="5WV-O8-z1V"/>
+                                                                <constraint firstItem="Fda-Cq-0Ls" firstAttribute="height" secondItem="NgD-XC-6ru" secondAttribute="height" id="658-pf-alR"/>
+                                                                <constraint firstAttribute="trailing" secondItem="BjN-Ug-d41" secondAttribute="trailing" id="7aR-B2-bvj"/>
+                                                                <constraint firstItem="BjN-Ug-d41" firstAttribute="height" secondItem="Fda-Cq-0Ls" secondAttribute="height" id="ClK-6l-4kt"/>
+                                                                <constraint firstItem="oQr-Z9-xED" firstAttribute="height" secondItem="Fda-Cq-0Ls" secondAttribute="height" id="brh-pp-ctG"/>
+                                                                <constraint firstItem="Fda-Cq-0Ls" firstAttribute="centerY" secondItem="NgD-XC-6ru" secondAttribute="centerY" id="dNd-Iu-spj"/>
+                                                                <constraint firstItem="BjN-Ug-d41" firstAttribute="centerY" secondItem="NgD-XC-6ru" secondAttribute="centerY" id="diN-7J-z56"/>
+                                                                <constraint firstItem="oQr-Z9-xED" firstAttribute="centerY" secondItem="NgD-XC-6ru" secondAttribute="centerY" id="moi-tx-d1i"/>
+                                                                <constraint firstItem="BjN-Ug-d41" firstAttribute="leading" secondItem="oQr-Z9-xED" secondAttribute="trailing" constant="5" id="tO8-4r-kaq"/>
                                                             </constraints>
-                                                        </stackView>
+                                                        </view>
                                                     </subviews>
                                                     <constraints>
-                                                        <constraint firstAttribute="trailing" secondItem="bfl-7R-IFP" secondAttribute="trailing" constant="16" id="KKW-FK-STA"/>
-                                                        <constraint firstAttribute="bottom" secondItem="bfl-7R-IFP" secondAttribute="bottom" constant="10" id="a2a-jI-bOf"/>
-                                                        <constraint firstItem="bfl-7R-IFP" firstAttribute="top" secondItem="cSk-fS-YS8" secondAttribute="top" constant="10" id="apd-yX-u6w"/>
-                                                        <constraint firstItem="bfl-7R-IFP" firstAttribute="leading" secondItem="cSk-fS-YS8" secondAttribute="leading" constant="16" id="c3q-fs-mIS"/>
+                                                        <constraint firstItem="NgD-XC-6ru" firstAttribute="leading" secondItem="cSk-fS-YS8" secondAttribute="leading" constant="16" id="0hK-Wo-lzn"/>
+                                                        <constraint firstAttribute="bottom" secondItem="NgD-XC-6ru" secondAttribute="bottom" id="Eyu-Bs-tFQ"/>
+                                                        <constraint firstAttribute="trailing" secondItem="NgD-XC-6ru" secondAttribute="trailing" constant="16" id="qG4-rY-Zaz"/>
+                                                        <constraint firstItem="NgD-XC-6ru" firstAttribute="top" secondItem="cSk-fS-YS8" secondAttribute="top" id="wEz-6E-h1G"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
                                                 <connections>
                                                     <outlet property="accountNumber" destination="Fda-Cq-0Ls" id="gh2-dG-8gB"/>
-                                                    <outlet property="sum" destination="k54-ul-YgB" id="qL3-3P-hmL"/>
+                                                    <outlet property="sum" destination="BjN-Ug-d41" id="RUV-0V-WJC"/>
                                                 </connections>
                                             </tableViewCell>
                                         </prototypes>

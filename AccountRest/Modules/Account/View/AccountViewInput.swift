@@ -8,10 +8,6 @@
 
 protocol AccountViewInput: class {
 
-    /**
-        @author Dmitriy
-        Setup initial state of the view
-    */
-
     func setupInitialState()
+    func setAccountView(account: SWAccount)
 }
