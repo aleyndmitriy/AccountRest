@@ -79,7 +79,9 @@
 		FE7E0FB720BC897B00F912E3 /* MainViewRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7E0FB620BC897B00F912E3 /* MainViewRenderer.swift */; };
 		FE80AC4A20C47AAE00CEA5F4 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FE80AC4920C47AAE00CEA5F4 /* libsqlite3.tbd */; };
 		FE80AC4F20C4838600CEA5F4 /* DatabaseCloser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE80AC4D20C4838600CEA5F4 /* DatabaseCloser.cpp */; };
+		FECE029E20D6B15A00C0B07A /* AccountViewRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECE029D20D6B15A00C0B07A /* AccountViewRenderer.swift */; };
 		FEDD444920C293AF00834600 /* AccountBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEDD444820C293AF00834600 /* AccountBoard.storyboard */; };
+		FEE491CC20DAF3DD005BA89A /* AccountShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = FEE491CB20DAF3DD005BA89A /* AccountShaders.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -159,7 +161,10 @@
 		FE80AC4C20C4838600CEA5F4 /* AccountRest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AccountRest-Bridging-Header.h"; sourceTree = "<group>"; };
 		FE80AC4D20C4838600CEA5F4 /* DatabaseCloser.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DatabaseCloser.cpp; sourceTree = "<group>"; };
 		FE80AC4E20C4838600CEA5F4 /* DatabaseCloser.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DatabaseCloser.hpp; sourceTree = "<group>"; };
+		FECE029D20D6B15A00C0B07A /* AccountViewRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewRenderer.swift; sourceTree = "<group>"; };
 		FEDD444820C293AF00834600 /* AccountBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AccountBoard.storyboard; sourceTree = "<group>"; };
+		FEE491CB20DAF3DD005BA89A /* AccountShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = AccountShaders.metal; sourceTree = "<group>"; };
+		FEE491CD20DAF427005BA89A /* AccountShadersTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountShadersTypes.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,6 +236,9 @@
 				F999FB34E3F6A17D7247C03F /* AccountViewOutput.swift */,
 				1887CB1B101FCB87BE65E55B /* AccountViewController.swift */,
 				FEDD444820C293AF00834600 /* AccountBoard.storyboard */,
+				FECE029D20D6B15A00C0B07A /* AccountViewRenderer.swift */,
+				FEE491CB20DAF3DD005BA89A /* AccountShaders.metal */,
+				FEE491CD20DAF427005BA89A /* AccountShadersTypes.h */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -654,8 +662,10 @@
 				B5574CE7CEC79F335C58EA6C /* RestarauntsViewInput.swift in Sources */,
 				588B006D1CF5D1E327FA20FA /* RestarauntsViewOutput.swift in Sources */,
 				06A2497D48B602C4BF1862C0 /* RestarauntsViewController.swift in Sources */,
+				FECE029E20D6B15A00C0B07A /* AccountViewRenderer.swift in Sources */,
 				DAED37F385801C5F32B4BDA5 /* RestarauntsModuleInput.swift in Sources */,
 				6E21676177632E2C03918AFD /* RestarauntsPresenter.swift in Sources */,
+				FEE491CC20DAF3DD005BA89A /* AccountShaders.metal in Sources */,
 				94993BC9549A9EC7379F5DB4 /* RestarauntsInteractorInput.swift in Sources */,
 				A3A5202A71EDA4E72C776108 /* RestarauntsInteractorOutput.swift in Sources */,
 				87CEEC3C59D1920608D17B4A /* RestarauntsInteractor.swift in Sources */,

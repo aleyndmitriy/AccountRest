@@ -16,7 +16,7 @@ class AccountViewController: UIViewController, AccountViewInput {
     @IBOutlet weak var lblNumber: UILabel!
     @IBOutlet weak var txtSum: UITextField!
     @IBOutlet weak var renderView: MTKView!
-    var renderer: MainViewRenderer?
+    var renderer: AccountViewRenderer?
     
     @IBAction func btnBackTouched(_ sender: UIButton) {
         self.output.backFromAccountViewToAccountsView()
@@ -29,7 +29,7 @@ class AccountViewController: UIViewController, AccountViewInput {
         if self.renderView.device == nil {
             return
         }
-        self.renderer = MainViewRenderer(view: self.renderView)
+        self.renderer = AccountViewRenderer(view: self.renderView)
         guard let rendererView = self.renderer else {
             return
         }

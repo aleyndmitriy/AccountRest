@@ -94,13 +94,13 @@
                                 </constraints>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BCL-dq-giz" customClass="MTKView">
-                                <rect key="frame" x="0.0" y="184" width="375" height="423"/>
+                                <rect key="frame" x="0.0" y="184" width="375" height="403"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cD8-7h-Vze">
-                                <rect key="frame" x="0.0" y="607" width="375" height="55"/>
+                                <rect key="frame" x="0.0" y="587" width="375" height="75"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="55" id="bbZ-Tl-vHK"/>
+                                    <constraint firstAttribute="height" constant="75" id="bbZ-Tl-vHK"/>
                                 </constraints>
                             </stackView>
                         </subviews>
