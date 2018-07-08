@@ -8,15 +8,10 @@
 
 class SWAccount: Hashable{
     
-    
     static var counter: Int = 0
     let number: String
     var sum: Double
     let nameOfBank: String
-    
-    convenience init(){
-        self.init(number: "0", nameOfBank: "N/A")
-    }
     
     init(number: String, sum: Double, nameOfBank: String){
         self.number = number
