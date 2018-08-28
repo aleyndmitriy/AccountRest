@@ -8,6 +8,7 @@
 
 #ifndef Consts_h
 #define Consts_h
+const int MAX_CODE_LENGTH = 16;
 const int UUID_LENGTH = 32;
 const int MAX_NAME_LENGTH = 32;
 const int MAX_ADDRESS_LENGTH = 128;

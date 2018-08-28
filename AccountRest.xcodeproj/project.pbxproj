@@ -74,9 +74,13 @@
 		EEB2892FC2AD06861FFD11D0 /* ProductsViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891DFEF8A2F53D9612C4D290 /* ProductsViewOutput.swift */; };
 		F3B989C5407E84028B93C362 /* ProductsInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468899DB041EEDD98A8BD8E1 /* ProductsInitializer.swift */; };
 		F597ECA9D05A0F432E081F6D /* ProductsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012D4E03DA1104DA11D067F3 /* ProductsInteractor.swift */; };
+		FE1FF1ED2135CC56007C0999 /* SWAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1FF1EC2135CC56007C0999 /* SWAgent.swift */; };
+		FE1FF1F12135ED71007C0999 /* SWProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1FF1F02135ED71007C0999 /* SWProduct.swift */; };
+		FE206D182134A3A4002977AD /* SWProductCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE206D172134A3A4002977AD /* SWProductCategory.swift */; };
 		FE231D421FA64C1200EFB354 /* SWAccountViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE231D411FA64C1200EFB354 /* SWAccountViewCell.swift */; };
 		FE7E0FB520BC860D00F912E3 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE7E0FB420BC860D00F912E3 /* MetalKit.framework */; };
 		FE7E0FB720BC897B00F912E3 /* MainViewRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7E0FB620BC897B00F912E3 /* MainViewRenderer.swift */; };
+		FE7EC4B22118E0CE00A6DB1B /* SWPointOfActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7EC4B12118E0CE00A6DB1B /* SWPointOfActivity.swift */; };
 		FE80AC4A20C47AAE00CEA5F4 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FE80AC4920C47AAE00CEA5F4 /* libsqlite3.tbd */; };
 		FEBB7A5C20F20FA500E77F32 /* SWLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBB7A5B20F20FA500E77F32 /* SWLocation.swift */; };
 		FECE029E20D6B15A00C0B07A /* AccountViewRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECE029D20D6B15A00C0B07A /* AccountViewRenderer.swift */; };
@@ -153,12 +157,20 @@
 		F999FB34E3F6A17D7247C03F /* AccountViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AccountViewOutput.swift; sourceTree = "<group>"; };
 		FA16D79147715322DCBBC6F3 /* BanksViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BanksViewOutput.swift; sourceTree = "<group>"; };
 		FBA253A708B3B3BF9B3B5891 /* AccountsInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AccountsInteractorInput.swift; sourceTree = "<group>"; };
+		FE1FF1EC2135CC56007C0999 /* SWAgent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWAgent.swift; sourceTree = "<group>"; };
+		FE1FF1EF2135E9B7007C0999 /* Product.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
+		FE1FF1F02135ED71007C0999 /* SWProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWProduct.swift; sourceTree = "<group>"; };
+		FE206D162134A317002977AD /* ProductCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductCategory.h; sourceTree = "<group>"; };
+		FE206D172134A3A4002977AD /* SWProductCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWProductCategory.swift; sourceTree = "<group>"; };
+		FE206D1A2134AFC2002977AD /* Agent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Agent.h; sourceTree = "<group>"; };
 		FE231D411FA64C1200EFB354 /* SWAccountViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWAccountViewCell.swift; sourceTree = "<group>"; };
 		FE417856F9C9593BC420DE41 /* ProductsViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProductsViewInput.swift; sourceTree = "<group>"; };
 		FE4476E120E6DE23008F2E0F /* Account.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
 		FE4476E320E6E199008F2E0F /* Consts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Consts.h; sourceTree = "<group>"; };
 		FE7E0FB420BC860D00F912E3 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
 		FE7E0FB620BC897B00F912E3 /* MainViewRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewRenderer.swift; sourceTree = "<group>"; };
+		FE7EC4B02118DD2C00A6DB1B /* PointOfActivity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PointOfActivity.h; sourceTree = "<group>"; };
+		FE7EC4B12118E0CE00A6DB1B /* SWPointOfActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWPointOfActivity.swift; sourceTree = "<group>"; };
 		FE80AC4920C47AAE00CEA5F4 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		FE80AC4C20C4838600CEA5F4 /* AccountRest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AccountRest-Bridging-Header.h"; sourceTree = "<group>"; };
 		FEBB7A5A20F20AFA00E77F32 /* Location.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
@@ -437,6 +449,11 @@
 		C24094C01F8CC40F009E19DA /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				FE1FF1F22135F1CE007C0999 /* Orders */,
+				FE1FF1EE2135E98B007C0999 /* Products */,
+				FE206D192134AF85002977AD /* Agents */,
+				FE206D152134A2CE002977AD /* ProductCategory */,
+				FE7EC4AF2118DCEE00A6DB1B /* PointOfActivity */,
 				FEBB7A5920F20ACA00E77F32 /* Location */,
 				FE4476E220E6DE2A008F2E0F /* Account */,
 			);
@@ -549,6 +566,40 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		FE1FF1EE2135E98B007C0999 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE1FF1EF2135E9B7007C0999 /* Product.h */,
+				FE1FF1F02135ED71007C0999 /* SWProduct.swift */,
+			);
+			path = Products;
+			sourceTree = "<group>";
+		};
+		FE1FF1F22135F1CE007C0999 /* Orders */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Orders;
+			sourceTree = "<group>";
+		};
+		FE206D152134A2CE002977AD /* ProductCategory */ = {
+			isa = PBXGroup;
+			children = (
+				FE206D162134A317002977AD /* ProductCategory.h */,
+				FE206D172134A3A4002977AD /* SWProductCategory.swift */,
+			);
+			path = ProductCategory;
+			sourceTree = "<group>";
+		};
+		FE206D192134AF85002977AD /* Agents */ = {
+			isa = PBXGroup;
+			children = (
+				FE206D1A2134AFC2002977AD /* Agent.h */,
+				FE1FF1EC2135CC56007C0999 /* SWAgent.swift */,
+			);
+			path = Agents;
+			sourceTree = "<group>";
+		};
 		FE4476E220E6DE2A008F2E0F /* Account */ = {
 			isa = PBXGroup;
 			children = (
@@ -556,6 +607,15 @@
 				FE4476E120E6DE23008F2E0F /* Account.h */,
 			);
 			path = Account;
+			sourceTree = "<group>";
+		};
+		FE7EC4AF2118DCEE00A6DB1B /* PointOfActivity */ = {
+			isa = PBXGroup;
+			children = (
+				FE7EC4B02118DD2C00A6DB1B /* PointOfActivity.h */,
+				FE7EC4B12118E0CE00A6DB1B /* SWPointOfActivity.swift */,
+			);
+			path = PointOfActivity;
 			sourceTree = "<group>";
 		};
 		FE80AC4B20C4803A00CEA5F4 /* DataAccess */ = {
@@ -650,6 +710,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C24B27FF1F7A3C2100E1685D /* MainViewController.swift in Sources */,
+				FE1FF1ED2135CC56007C0999 /* SWAgent.swift in Sources */,
 				C24B27FD1F7A3C2100E1685D /* AppDelegate.swift in Sources */,
 				978F77676FD143A4A0C4C136 /* BanksViewInput.swift in Sources */,
 				998C5505E0AF88D4696D7D00 /* BanksViewOutput.swift in Sources */,
@@ -661,6 +722,7 @@
 				18F5EA43B17A41D64C4F00AE /* BanksInteractor.swift in Sources */,
 				20095B6BD202022F54343143 /* BanksRouterInput.swift in Sources */,
 				57B2E4F16D076DC466682324 /* BanksRouter.swift in Sources */,
+				FE1FF1F12135ED71007C0999 /* SWProduct.swift in Sources */,
 				86172406481B1390D06EDFBC /* BanksConfigurator.swift in Sources */,
 				61172F9FAB6A319FAB6AE079 /* BanksInitializer.swift in Sources */,
 				FEBB7A5C20F20FA500E77F32 /* SWLocation.swift in Sources */,
@@ -671,6 +733,7 @@
 				DD5C16410C6E718D87274444 /* AccountsModuleInput.swift in Sources */,
 				5DBBEFD1579080D238353B6C /* AccountsPresenter.swift in Sources */,
 				000B7D88DE1A9D803ECEEC6A /* AccountsInteractorInput.swift in Sources */,
+				FE7EC4B22118E0CE00A6DB1B /* SWPointOfActivity.swift in Sources */,
 				045B9CB89B48348C6F74EEF6 /* AccountsInteractorOutput.swift in Sources */,
 				7AB5482475FB356D7F1CA97E /* AccountsInteractor.swift in Sources */,
 				71AC2E6F1DA7CBF3CD8C4153 /* AccountsRouterInput.swift in Sources */,
@@ -717,6 +780,7 @@
 				34532C478749B843928CA92C /* AccountRouter.swift in Sources */,
 				70339AA714C4DB25E1FE9B7D /* AccountConfigurator.swift in Sources */,
 				6C206F88221DE883D53B49B6 /* AccountInitializer.swift in Sources */,
+				FE206D182134A3A4002977AD /* SWProductCategory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
