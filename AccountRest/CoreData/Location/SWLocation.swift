@@ -15,6 +15,7 @@ class SWLocation: Hashable {
     let address: String
     var latitude: Double
     var longitude: Double
+    var pointOfSales: [SWPointOfActivity]?
     
     var hashValue: Int {
         let hash1: Int = number.hash
