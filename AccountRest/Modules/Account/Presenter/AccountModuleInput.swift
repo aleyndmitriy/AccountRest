@@ -6,6 +6,6 @@
 //  Copyright © 2018 Home. All rights reserved.
 //
 
-protocol AccountModuleInput: class {
+protocol AccountModuleInput: AnyObject {
     var account: SWAccount? { get set }
 }

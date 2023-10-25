@@ -6,6 +6,6 @@
 //  Copyright © 2017 Home. All rights reserved.
 //
 
-protocol AccountsModuleInput: class {
+protocol AccountsModuleInput: AnyObject {
 
 }

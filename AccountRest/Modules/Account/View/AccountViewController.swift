@@ -46,7 +46,7 @@ class AccountViewController: UIViewController, AccountViewInput {
     func setAccountView(account: SWAccount) {
         self.lblNameOfBank.text = account.nameOfBank
         self.lblNumber.text = account.number
-        self.txtSum.text = account.sum.description
+        self.txtSum.text = String(format: "%f.2", account.sum)
     }
 }
 

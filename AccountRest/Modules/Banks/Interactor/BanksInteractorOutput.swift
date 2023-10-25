@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol BanksInteractorOutput: class {
+protocol BanksInteractorOutput: AnyObject {
 
 }

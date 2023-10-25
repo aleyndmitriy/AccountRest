@@ -23,7 +23,7 @@ vertex AccountViewOutputVertex vertex_shader(const device AccountInputViewVertex
     
     AccountViewOutputVertex v_out;
     v_out.position = position;
-    v_out.color = color;
+    v_out.color = (vertices + vertexId)->color;
     return v_out;
 }
 

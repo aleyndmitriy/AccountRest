@@ -16,9 +16,8 @@ class SWPointOfActivity: Hashable{
     let name: String
     unowned let location: SWLocation
     
-    var hashValue: Int {
-        let hash1: Int = number.hash
-        return hash1
+    func hash(into hasher: inout Hasher) {
+            hasher.combine(number)
     }
     
     init(number: String, code: String, name: String, location: SWLocation) {

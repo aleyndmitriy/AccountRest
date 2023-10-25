@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol RestarauntsInteractorOutput: class {
+protocol RestarauntsInteractorOutput: AnyObject {
 
 }

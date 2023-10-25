@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol AccountsInteractorOutput: class {
+protocol AccountsInteractorOutput: AnyObject {
 
 }

@@ -6,7 +6,7 @@
 //  Copyright © 2017 Home. All rights reserved.
 //
 
-protocol RestarauntsViewInput: class {
+protocol RestarauntsViewInput: AnyObject {
 
     /**
         @author ACR

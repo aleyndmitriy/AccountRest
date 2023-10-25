@@ -12,9 +12,8 @@ import UIKit
 class SWAccountViewCell: UITableViewCell, UITextFieldDelegate {
 
     @IBOutlet weak var accountNumber: UILabel!
-    
-    @IBOutlet weak var sum: UILabel!
-    fileprivate var accountHash: Int = 0
+    @IBOutlet weak var nameOfBank: UILabel!
+    fileprivate var accountID: String?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -22,13 +21,12 @@ class SWAccountViewCell: UITableViewCell, UITextFieldDelegate {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        self.sum.resignFirstResponder()
     }
     
     func setAccountAttributes(account: SWAccount)->Void{
-        self.accountHash = account.hashValue
-        self.accountNumber.text = account.number
-        self.sum.text = "\(account.sum)"
+        self.accountID = account.number
+        self.accountNumber.text = self.accountID
+        self.nameOfBank.text = account.nameOfBank
     }
 
 }

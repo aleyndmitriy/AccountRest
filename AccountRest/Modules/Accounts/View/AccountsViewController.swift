@@ -37,7 +37,7 @@ class AccountsViewController: UIViewController, AccountsViewInput, UISearchBarDe
    
     
     func reloadViewSection(index: Int) {
-        self.tableView.reloadSections(IndexSet(integer: index), with: UITableViewRowAnimation.fade)
+        self.tableView.reloadSections(IndexSet(integer: index), with: UITableView.RowAnimation.fade)
     }
     
     func reloadViewTable() {
@@ -90,7 +90,7 @@ extension AccountsViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableViewAutomaticDimension
+        return UITableView.automaticDimension
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

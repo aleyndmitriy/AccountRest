@@ -6,6 +6,6 @@
 //  Copyright © 2017 Home. All rights reserved.
 //
 
-protocol RestarauntsModuleInput: class {
+protocol RestarauntsModuleInput: AnyObject {
 
 }

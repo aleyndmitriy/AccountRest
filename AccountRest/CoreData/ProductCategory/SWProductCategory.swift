@@ -14,9 +14,8 @@ class SWProductCategory: Hashable{
     let code: String
     let name: String
     
-    var hashValue: Int {
-        let hash1: Int = number.hash
-        return hash1
+    func hash(into hasher: inout Hasher) {
+            hasher.combine(number)
     }
     
     init(number: String, code: String, name: String) {

@@ -17,9 +17,8 @@ class SWProduct: Hashable{
     let price: Double
     let discontinued: Bool
     
-    var hashValue: Int {
-        let hash1: Int = number.hash
-        return hash1
+    func hash(into hasher: inout Hasher) {
+            hasher.combine(number)
     }
     
     init(number: String, productName: String, supplierId: String, categoryId: String, price: Double, discontinued: Bool) {

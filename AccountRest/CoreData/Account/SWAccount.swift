@@ -20,9 +20,10 @@ class SWAccount: Hashable{
         SWAccount.counter += 1
         print("Init SWAccount quantity \(SWAccount.counter)")
     }
-    var hashValue: Int {
-        let hash1: Int = number.hash
-        return hash1
+    
+    func hash(into hasher: inout Hasher) {
+            hasher.combine(number)
+            hasher.combine(nameOfBank)
     }
     
     convenience init(number: String, nameOfBank: String){

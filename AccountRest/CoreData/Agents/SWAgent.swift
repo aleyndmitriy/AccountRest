@@ -16,9 +16,8 @@ class SWAgent: Hashable{
     let email: String
     var pointList: [SWPointOfActivity]?
     
-    var hashValue: Int {
-        let hash1: Int = number.hash
-        return hash1
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(self.number)
     }
     
     init(number: String, companyName: String, contactName: String, phone: String, email: String) {

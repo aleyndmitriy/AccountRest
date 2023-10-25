@@ -8,6 +8,7 @@
 
 class AccountPresenter: AccountModuleInput, AccountViewOutput, AccountInteractorOutput {
     
+    
     var account: SWAccount?
     
 

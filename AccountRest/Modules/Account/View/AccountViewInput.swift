@@ -6,7 +6,7 @@
 //  Copyright © 2018 Home. All rights reserved.
 //
 
-protocol AccountViewInput: class {
+protocol AccountViewInput: AnyObject {
 
     func setupInitialState()
     func setAccountView(account: SWAccount)

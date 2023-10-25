@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol ProductsInteractorOutput: class {
+protocol ProductsInteractorOutput: AnyObject {
 
 }

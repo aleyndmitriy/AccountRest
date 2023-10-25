@@ -36,25 +36,31 @@ class AccountViewRenderer: NSObject {
         }
         self.device = device
             self.initialVertices = [
-                AccountInputViewVertex(position: vector_float4([-0.5, 0.5, 0, 1]), color: vector_float4([1, 0, 0, 1])),
-                AccountInputViewVertex(position: vector_float4([0.5, 0.5, 0, 1]), color: vector_float4([0, 0, 1, 1])),
-                AccountInputViewVertex(position: vector_float4([0.5, -0.5, 0, 1]), color: vector_float4([1, 0, 0, 1])),
-                AccountInputViewVertex(position: vector_float4([-1, -1, 0, 1]), color: vector_float4([0, 1, 0, 1])),
-                AccountInputViewVertex(position: vector_float4([0, 0, 0, 1]), color: vector_float4([0, 1, 0, 1])),
-                AccountInputViewVertex(position: vector_float4([0, 0, 0, 1]), color: vector_float4([0, 0, 1, 1]))
-            ]
-        self.indices = [0, 5, 1, 1, 5, 2, 2, 5, 3, 3, 5, 0, 0, 1, 4, 4, 1, 2, 2, 3, 4, 4, 3, 0]
+                AccountInputViewVertex(position: vector_float4([-0.5, 0.5, 0.5, 1]), color: vector_float4([1, 0, 0, 1])),
+                AccountInputViewVertex(position: vector_float4([-0.5, -0.5, 0.5, 1]), color: vector_float4([1, 0, 0, 1])),
+                AccountInputViewVertex(position: vector_float4([0.5, -0.5, 0.5, 1]), color: vector_float4([1, 0, 0, 1])),
+                AccountInputViewVertex(position: vector_float4([0.5, 0.5, 0.5, 1]), color: vector_float4([1, 0, 0, 1])),
+                AccountInputViewVertex(position: vector_float4([-0.5, 0.5, -0.5, 1]), color: vector_float4([1, 0, 0, 1])),
+                AccountInputViewVertex(position: vector_float4([-0.5, -0.5, -0.5, 1]), color: vector_float4([1, 0, 0, 1])),
+                AccountInputViewVertex(position: vector_float4([0.5, -0.5, -0.5, 1]), color: vector_float4([1, 0, 0, 1])),
+                AccountInputViewVertex(position: vector_float4([0.5, 0.5, -0.5, 1]), color: vector_float4([1, 0, 0, 1]))]
+        self.indices = [3,2,6,6,7,3,
+                        4,5,1,1,0,4,
+                        4,0,3,3,7,4,
+                        1,5,6,6,2,1,
+                        0,1,2,2,3,0,
+                        7,6,5,5,4,7]
         self.uniforms = Uniforms(modelViewMatrix: matrix_float4x4(1.0), projectionMatrix: matrix_float4x4(1.0))
-        guard let vertexBuff = device.makeBuffer(bytes: self.initialVertices, length: self.initialVertices.count * MemoryLayout<AccountInputViewVertex>.size, options: MTLResourceOptions.storageModeShared) else {
+        guard let vertexBuff = device.makeBuffer(bytes: self.initialVertices, length: self.initialVertices.count * MemoryLayout<AccountInputViewVertex>.stride, options: MTLResourceOptions.storageModeShared) else {
             return nil
         }
         self.vertexBuffer = vertexBuff
-        guard let indexBuff = device.makeBuffer(bytes: self.indices, length: self.indices.count * MemoryLayout<UInt16>.size, options: MTLResourceOptions.storageModeShared) else {
+        guard let indexBuff = device.makeBuffer(bytes: self.indices, length: self.indices.count * MemoryLayout<UInt16>.stride, options: MTLResourceOptions.storageModeShared) else {
             return nil
         }
         self.indexBuffer = indexBuff
         
-        guard let uniformBuff = device.makeBuffer(bytes: &(self.uniforms), length: MemoryLayout<Uniforms>.stride, options: MTLResourceOptions.storageModeShared) else {
+        guard let uniformBuff = device.makeBuffer(bytes: &(self.uniforms), length: MemoryLayout<Uniforms>.size, options: MTLResourceOptions.storageModeShared) else {
             return nil
         }
         self.uniformBuffer = uniformBuff
@@ -114,13 +120,14 @@ extension AccountViewRenderer: MTKViewDelegate {
             return
         }
         self.time += 1 / Float(view.preferredFramesPerSecond)
-        self.uniforms.modelViewMatrix[0][0] = cos(100*self.time)
-        self.uniforms.modelViewMatrix[1][1] = cos(100*self.time)
-        self.uniforms.modelViewMatrix[0][1] = sin(100*self.time)
-        self.uniforms.modelViewMatrix[1][0] = -sin(100*self.time)
+        self.uniforms.modelViewMatrix[0][0] = cos(self.time)
+        self.uniforms.modelViewMatrix[1][1] = cos(self.time)
+        self.uniforms.modelViewMatrix[0][1] = sin(self.time)
+        self.uniforms.modelViewMatrix[1][0] = -sin(self.time)
+        self.uniforms.modelViewMatrix[3][3] = 0
         commandEncoder.setRenderPipelineState(self.pipelineState)
         commandEncoder.setVertexBuffer(self.vertexBuffer, offset: 0, index: Int(AccountViewVertexInputIndexVertices.rawValue))
-        self.uniformBuffer.contents().copyMemory(from: &(self.uniforms), byteCount: MemoryLayout<Uniforms>.stride)
+        self.uniformBuffer.contents().copyMemory(from: &(self.uniforms), byteCount: MemoryLayout<Uniforms>.size)
         commandEncoder.setVertexBuffer(self.uniformBuffer, offset: 0, index: Int(AccountViewVertexInputIndexViewportSize.rawValue))
         //commandEncoder.setVertexBytes(&self.uniforms, length: MemoryLayout<Uniforms>.size, index: Int(AccountViewVertexInputIndexViewportSize.rawValue))
         commandEncoder.drawPrimitives(type: .triangle, vertexStart: 0, vertexCount: self.initialVertices.count)

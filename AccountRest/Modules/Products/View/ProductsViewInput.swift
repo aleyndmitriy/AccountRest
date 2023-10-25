@@ -6,7 +6,7 @@
 //  Copyright © 2017 Home. All rights reserved.
 //
 
-protocol ProductsViewInput: class {
+protocol ProductsViewInput: AnyObject {
 
     /**
         @author ACR

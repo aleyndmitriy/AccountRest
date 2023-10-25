@@ -7,7 +7,7 @@
 //
 
 
-protocol AccountsViewInput: class {
+protocol AccountsViewInput: AnyObject {
 
     func setupInitialState()
     func startLoading()

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -158,14 +158,12 @@
 		FA16D79147715322DCBBC6F3 /* BanksViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BanksViewOutput.swift; sourceTree = "<group>"; };
 		FBA253A708B3B3BF9B3B5891 /* AccountsInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AccountsInteractorInput.swift; sourceTree = "<group>"; };
 		FE1FF1EC2135CC56007C0999 /* SWAgent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWAgent.swift; sourceTree = "<group>"; };
-		FE1FF1EF2135E9B7007C0999 /* Product.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
 		FE1FF1F02135ED71007C0999 /* SWProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWProduct.swift; sourceTree = "<group>"; };
 		FE206D162134A317002977AD /* ProductCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductCategory.h; sourceTree = "<group>"; };
 		FE206D172134A3A4002977AD /* SWProductCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWProductCategory.swift; sourceTree = "<group>"; };
 		FE206D1A2134AFC2002977AD /* Agent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Agent.h; sourceTree = "<group>"; };
 		FE231D411FA64C1200EFB354 /* SWAccountViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWAccountViewCell.swift; sourceTree = "<group>"; };
 		FE417856F9C9593BC420DE41 /* ProductsViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProductsViewInput.swift; sourceTree = "<group>"; };
-		FE4476E120E6DE23008F2E0F /* Account.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
 		FE4476E320E6E199008F2E0F /* Consts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Consts.h; sourceTree = "<group>"; };
 		FE7E0FB420BC860D00F912E3 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
 		FE7E0FB620BC897B00F912E3 /* MainViewRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewRenderer.swift; sourceTree = "<group>"; };
@@ -173,7 +171,7 @@
 		FE7EC4B12118E0CE00A6DB1B /* SWPointOfActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWPointOfActivity.swift; sourceTree = "<group>"; };
 		FE80AC4920C47AAE00CEA5F4 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		FE80AC4C20C4838600CEA5F4 /* AccountRest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AccountRest-Bridging-Header.h"; sourceTree = "<group>"; };
-		FEBB7A5A20F20AFA00E77F32 /* Location.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
+		FE836A342AE920FA0091D89F /* TestPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TestPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FEBB7A5B20F20FA500E77F32 /* SWLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWLocation.swift; sourceTree = "<group>"; };
 		FECE029D20D6B15A00C0B07A /* AccountViewRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewRenderer.swift; sourceTree = "<group>"; };
 		FEDD444820C293AF00834600 /* AccountBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AccountBoard.storyboard; sourceTree = "<group>"; };
@@ -463,6 +461,7 @@
 		C24B27F01F7A3C2100E1685D = {
 			isa = PBXGroup;
 			children = (
+				FE836A342AE920FA0091D89F /* TestPlayground.playground */,
 				C24B27FB1F7A3C2100E1685D /* AccountRest */,
 				C24B27FA1F7A3C2100E1685D /* Products */,
 				79DCFB47F7B21C2E46682FF9 /* Frameworks */,
@@ -569,7 +568,6 @@
 		FE1FF1EE2135E98B007C0999 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FE1FF1EF2135E9B7007C0999 /* Product.h */,
 				FE1FF1F02135ED71007C0999 /* SWProduct.swift */,
 			);
 			path = Products;
@@ -604,7 +602,6 @@
 			isa = PBXGroup;
 			children = (
 				C26A503B1F8E1BCB003CDA79 /* SWAccount.swift */,
-				FE4476E120E6DE23008F2E0F /* Account.h */,
 			);
 			path = Account;
 			sourceTree = "<group>";
@@ -628,7 +625,6 @@
 		FEBB7A5920F20ACA00E77F32 /* Location */ = {
 			isa = PBXGroup;
 			children = (
-				FEBB7A5A20F20AFA00E77F32 /* Location.h */,
 				FEBB7A5B20F20FA500E77F32 /* SWLocation.swift */,
 			);
 			path = Location;
@@ -660,13 +656,14 @@
 		C24B27F11F7A3C2100E1685D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 0900;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1500;
 				ORGANIZATIONNAME = "Dmitrij Aleinikov";
 				TargetAttributes = {
 					C24B27F81F7A3C2100E1685D = {
 						CreatedOnToolsVersion = 9.0;
-						LastSwiftMigration = 0940;
+						LastSwiftMigration = 1500;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -831,6 +828,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -842,6 +840,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -857,7 +856,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = /usr/local/include/;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LIBRARY_SEARCH_PATHS = /usr/local/lib/;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -892,6 +891,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -903,6 +903,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -912,12 +913,13 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = /usr/local/include/;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LIBRARY_SEARCH_PATHS = /usr/local/lib/;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -926,18 +928,25 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 79E756PTBV;
+				GCC_C_LANGUAGE_STANDARD = c17;
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = AccountRest/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = Home.AccountRest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "AccountRest/AccountRest-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -946,17 +955,24 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 79E756PTBV;
+				GCC_C_LANGUAGE_STANDARD = c17;
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = AccountRest/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = Home.AccountRest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "AccountRest/AccountRest-Bridging-Header.h";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
